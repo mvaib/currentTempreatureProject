@@ -14,7 +14,7 @@ print(f"Current Temperature of {user.upper()} is : {data}°C")
 climate = response.json()['weather'][0]['main']
 if response.json()['weather'][0]['main'] == "Clouds":
     print(f"Weather of {user.upper()} is : {climate} {emoji['Cloudy']}")
-elif response.json()['weather'][0]['main'] == "Drizzle":
+elif response.json()['weather'][0]['main'] == "Drizzle" or "Rain":
     print(f"Weather of {user.upper()} is : {climate} {emoji['Drizzle']}")
 elif response.json()['weather'][0]['main'] == "Haze":
     print(f"Weather of {user.upper()} is : {climate} {emoji['Haze']}")
